@@ -366,6 +366,72 @@ hr {
 }
 .page-title {
   color: #aaa;
-  border-bottom: 2px solid #999;
-  font-size: 18px;
+  border-bottom: 3px solid #999;
+  font-size: 1.2em;
+}
+.add-player {
+  font-size: 1.4em;
+  display: block;
+  padding-bottom: .7em;
+}
+.add-player:before,
+.add-player:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.add-player:after {
+  clear: both;
+}
+.add-player-label {
+  float: left;
+}
+.add-player-icon {
+  float: right;
+  font-size: 2.4em;
+  font-weight: 100;
+  line-height: .5em;
+  margin-right: .2em;
+}
+.players {
+  margin: 0;
+  padding: 0;
+}
+.player {
+  list-style: none;
+  border-top: 2px solid #ddd;
+}
+.player:before,
+.player:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.player:after {
+  clear: both;
+}
+.player-name {
+  float: left;
+  width: 75%;
+  font-size: 1.3em;
+  color: #222;
+  padding-top: .4em;
+}
+.player-score {
+  float: left;
+  width: 75%;
+}
+.player-avatar {
+  float: right;
+  width: 25%;
+}
+.player-avatar img {
+  display: block;
+  max-width: 100%;
 }

@@ -1,0 +1,16 @@
+name: BYU-Idaho Front-End Framework
+markdown: redcarpet
+pygments: true
+baseurl: '/generated-score/'
+destination: '../generated-score/'
+exclude: [
+	'_less', 
+	'_less/', 
+	'_less/*', 
+	'node_modules', 
+	'node_modules/', 
+	'node_modules/*',
+	'package.json',
+	'Gruntfile.js',
+	'to-do.md'
+]

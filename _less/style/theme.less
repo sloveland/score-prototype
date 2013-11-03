@@ -1,15 +1,50 @@
 // HEADER
 .app-header {
   background-color: @brand-primary;
+  border-top: 3px solid @brand-dark;
+  border-bottom: 3px solid @brand-dark;
   .clearfix();
+  padding: 6px 0;
 }
 .app-title {
   color: #fff;
+  float: left;
   font-weight: @thin-weight;
   text-transform: lowercase;
+  line-height: 1em;
+  margin: 0;
+  position: relative;
+  top: -8px;
+  left: -.2em;
+  height: 45px;
+  .icon-score-logo {
+    font-size: 1.5em;
+    position: relative;
+    bottom: -.23em;
+    line-height: 1em;
+  }
 }
 
 // MENU NAV
+.menu {
+  float: right;
+  height: 45px;
+}
+.menu-slideout-toggle {
+  background: transparent;
+  border: none;
+  color: @brand-light;
+  display: block;
+  font-size: 3em;
+  line-height: .9em;
+  overflow: hidden;
+  position: relative;
+  // bottom: -.2em;
+  right: -.4em;
+  &:hover, &:active, &:target {
+    color: #fff;
+  }
+}
 .menu-slideout {
   display: none;
 }
@@ -22,16 +57,29 @@
     padding: 0;
   }
   li {
+    border-left: 1px solid #ccc;
     width: 33.333%;
     float: left;
     text-align: center;
     list-style: none;
+    &:first-child {
+      border: none;
+    }
+    &.active {
+      a { border-bottom: 8px solid @brand-primary; }
+    }
     a {
+      border-top: 8px solid #eee;
+      border-bottom: 8px solid #eee;
       display: block;
-      background-color: #e1e0e0;
-      padding: 1.4em 0;
+      background-color: #eee;
+      padding: 10px 0;
       text-transform: uppercase;
       font-weight: @bold-weight;
+      &:hover, &:active, &:target {
+        border-color: #fff;
+        background-color: #fff;
+      }
     }
   }
 }

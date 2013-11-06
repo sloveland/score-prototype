@@ -342,7 +342,7 @@ hr {
   background-color: #ef474a;
   border-top: 3px solid #d74043;
   border-bottom: 3px solid #d74043;
-  padding: 6px 0;
+  padding: .6em 0;
 }
 .app-header:before,
 .app-header:after {
@@ -360,6 +360,7 @@ hr {
   color: #fff;
   float: left;
   font-weight: 100;
+  font-size: 28px;
   text-transform: lowercase;
   line-height: 1em;
   margin: 0;
@@ -507,6 +508,7 @@ hr {
 .player-avatar {
   float: right;
   width: 25%;
+  max-width: 100px;
 }
 .player-avatar img {
   display: block;

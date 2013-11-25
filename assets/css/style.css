@@ -375,11 +375,15 @@ hr {
   bottom: -0.23em;
   line-height: 1em;
 }
-.menu {
+.page-wrap {
+  width: 100%;
+  transition: width 0.3s ease;
+}
+.menu-toggle {
   float: right;
   height: 45px;
 }
-.menu-slideout-toggle {
+.menu-toggle a {
   background: transparent;
   border: none;
   color: #f6a2a4;
@@ -390,13 +394,39 @@ hr {
   position: relative;
   right: -0.4em;
 }
-.menu-slideout-toggle:hover,
-.menu-slideout-toggle:active,
-.menu-slideout-toggle:target {
+.menu-toggle a:hover,
+.menu-toggle a:active,
+.menu-toggle a:target {
   color: #fff;
 }
-.menu-slideout {
+.menu-nav {
+  transition: width 0.3s ease;
+  background-color: #ef474a;
+  -webkit-box-shadow: 0 0 10px #000;
+  width: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+.menu-nav ul {
+  list-style: none;
+}
+.menu-toggle .close-menu {
   display: none;
+}
+#menu:target {
+  width: 20%;
+}
+#menu:target + .page-wrap {
+  width: 80%;
+}
+#menu:target + .page-wrap .menu-toggle .open-menu {
+  display: none;
+}
+#menu:target + .page-wrap .menu-toggle .close-menu {
+  display: block;
 }
 .pages:before,
 .pages:after {

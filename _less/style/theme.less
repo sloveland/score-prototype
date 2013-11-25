@@ -27,27 +27,60 @@
 }
 
 // MENU NAV
-.menu {
+.page-wrap {
+  width: 100%;
+  transition: width 0.3s ease;
+}
+.menu-toggle {
   float: right;
   height: 45px;
-}
-.menu-slideout-toggle {
-  background: transparent;
-  border: none;
-  color: @brand-light;
-  display: block;
-  font-size: 3em;
-  line-height: .9em;
-  overflow: hidden;
-  position: relative;
-  // bottom: -.2em;
-  right: -.4em;
-  &:hover, &:active, &:target {
-    color: #fff;
+  a {
+    background: transparent;
+    border: none;
+    color: @brand-light;
+    display: block;
+    font-size: 3em;
+    line-height: .9em;
+    overflow: hidden;
+    position: relative;
+    // bottom: -.2em;
+    right: -.4em;
+    &:hover, &:active, &:target {
+      color: #fff;
+    }
   }
 }
-.menu-slideout {
+.menu-nav {
+  transition: width 0.3s ease;
+  background-color: @brand-primary;
+  -webkit-box-shadow: 0 0 10px #000;
+
+  // Collapsed
+  width: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  ul {
+    list-style: none;
+  }
+}
+.menu-toggle .close-menu {
   display: none;
+}
+#menu:target {
+  width: 20%;
+  
+}
+#menu:target + .page-wrap {
+  width: 80%;
+  .menu-toggle .open-menu {
+    display: none;
+  }
+  .menu-toggle .close-menu {
+    display: block;
+  }
 }
 
 // PAGES NAV

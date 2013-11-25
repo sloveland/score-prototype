@@ -11,21 +11,17 @@
   <script src="assets/js/modernizr.min.js"></script>
 </head>
 <body>
-
-  {% include header.html %}
-  {% include nav.html %}
-
-
-  <main class="page" role="main">
-
-
-  <section>
-    <div class="container">
-      {{ content }}
-    </div>
-  </section>
-
-
-  </main>
+  {% include menu.html %}
+  <div class="page-wrap">
+    {% include header.html %}
+    {% include nav.html %}
+    <main class="page" role="main">
+      <section>
+        <div class="container">
+          {{ content }}
+        </div>
+      </section>
+    </main>
+  </div> 
 </body>
 </html>

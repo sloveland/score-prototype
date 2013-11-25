@@ -4,7 +4,13 @@ SCORE PROTOTYPE
 * Slideout Nav
 * Page Types
 
-## Menu Items ##
+## Default Game Menu Items ##
+* Games
+* Account
+* Settings
+
+
+## Active Game Menu Items ##
 * Game Settings
 * Edit Players
 * Save and Quit

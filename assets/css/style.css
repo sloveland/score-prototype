@@ -338,6 +338,12 @@ hr {
   margin-left: 6%;
   margin-right: 6%;
 }
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
 .app-header {
   background-color: #ef474a;
   border-top: 3px solid #d74043;
@@ -398,6 +404,7 @@ hr {
 .menu-toggle a:active,
 .menu-toggle a:target {
   color: #fff;
+  text-decoration: none;
 }
 .menu-nav {
   transition: width 0.3s ease;

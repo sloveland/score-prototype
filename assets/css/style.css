@@ -401,8 +401,10 @@ hr {
 }
 .menu-nav {
   transition: width 0.3s ease;
-  background-color: #ef474a;
+  background-color: #d74043;
   -webkit-box-shadow: 0 0 10px #000;
+  font-size: 1.25em;
+  font-weight: 100;
   width: 0;
   overflow: hidden;
   position: fixed;
@@ -412,6 +414,20 @@ hr {
 }
 .menu-nav ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu-nav a {
+  color: #fff;
+  display: block;
+  border-bottom: 1px solid #bd272a;
+  padding: .5em;
+}
+.menu-nav a:hover,
+.menu-nav a:active,
+.menu-nav a:target {
+  text-decoration: none;
+  background-color: #bd272a;
 }
 .menu-toggle .close-menu {
   display: none;

@@ -1,7 +1,6 @@
 SCORE PROTOTYPE
 ===============
 
-* Slideout Nav
 * Page Types
 
 ## Default Game Menu Items ##

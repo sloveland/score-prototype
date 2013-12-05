@@ -338,17 +338,43 @@ hr {
   margin-left: 6%;
   margin-right: 6%;
 }
+.col-45 {
+  width: 45%;
+}
 .pull-left {
   float: left;
 }
 .pull-right {
   float: right;
 }
+.button {
+  background-color: #cccccc;
+  padding: .5em;
+  text-align: center;
+  margin-bottom: 1em;
+  display: block;
+}
+.button-group:before,
+.button-group:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.button-group:after {
+  clear: both;
+}
+.button-primary {
+  background-color: #ef474a;
+}
 .app-header {
   background-color: #ef474a;
   border-top: 3px solid #d74043;
   border-bottom: 3px solid #d74043;
   padding: .6em 0;
+  min-height: 4.5em;
 }
 .app-header:before,
 .app-header:after {
@@ -563,4 +589,21 @@ hr {
 .player-avatar img {
   display: block;
   max-width: 100%;
+}
+.splash-wrap {
+  padding: 2em;
+}
+.splash-title {
+  text-align: center;
+  font-weight: 100;
+  color: #222;
+  margin: 0;
+  font-size: 5em;
+}
+.splash-logo {
+  font-size: 100px;
+  color: #ef474a;
+  text-align: center;
+  position: relative;
+  top: -0.3em;
 }

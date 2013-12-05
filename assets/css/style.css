@@ -349,10 +349,18 @@ hr {
 }
 .button {
   background-color: #cccccc;
+  border: 1px solid #b3b3b3;
   padding: .5em;
   text-align: center;
   margin-bottom: 1em;
   display: block;
+  text-decoration: none;
+}
+.button:hover,
+.button:active,
+.button:target {
+  background-color: #fff;
+  text-decoration: none;
 }
 .button-group:before,
 .button-group:after {
@@ -368,6 +376,7 @@ hr {
 }
 .button-primary {
   background-color: #ef474a;
+  border: 1px solid #eb181c;
 }
 .app-header {
   background-color: #ef474a;
